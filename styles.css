@@ -1,0 +1,116 @@
+/* --- COLORS --- */
+
+:root {
+    --page-background: #1B1B32;
+    --box-background: #3B3B4F;
+    --button-color: #FEBB3F;
+    --error-background: #FFADAD;
+    --error-color: #850000;
+}
+
+/* --- CSS RESET --- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- FONT ROBOTO STYLES */
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* --- CUSTOM STYLES --- */
+
+body {
+    background-color: var(--page-background);
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.arabic-number-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--box-background);
+    border: 1px solid white;
+    padding: 2rem 3rem;
+}
+
+.label {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+}
+
+.number-input {
+    background-color: var(--page-background);
+    color: white;
+    border: 1px solid white;
+    font-size: 2.5rem;
+    width: 100%;
+    height: 60px;
+    display: block;
+    padding: 6px 12px;
+    margin: 10px 0;
+}
+
+.convert-btn {
+    cursor: pointer;
+    background-color: var(--button-color);
+    font-size: 1.5rem;
+    border: none;
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    padding: 10px 0;
+    margin-top: 2rem;
+}
+
+.error-output {
+    background-color: var(--error-background);
+    color: var(--error-color);
+    font-size: 1.5rem;
+    border: 1px solid white;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+}
+
+.valid-output {
+    background-color: var(--box-background);
+    border: 1px solid white;
+    font-size: 1.5rem;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+}
